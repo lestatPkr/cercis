@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cercis - Taller de Arte Vegetal</title>
+    <meta name="description" content="Innovative and handcrafted floral decorations for events in Madrid. Transforming spaces with artful floral creations.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/animations.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="./">Cercis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./exhibitions">Exhibitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact</a>
+                </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="./testimonials?lang=en">English</a></li>
+                        <li><a class="dropdown-item" href="./testimonials?lang=es">Spanish</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        
+            
+        
+        
+        
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1522058171200-e61f77c7353d')">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4 mb-4 fade-in">Client Testimonials</h1>
+            <p class="lead slide-up">What Our Clients Say About Us</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-content py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="mb-4">Success Stories</h2>
+                <p class="lead">Read about the experiences of our valued clients and their journey with Cercis</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Ana Martínez" class="rounded-circle" width="80">
+                        </div>
+                        <div class="col">
+                            <div class="testimonial-content">
+                                <div class="stars mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <h4>Ana Martínez</h4>
+                                <p class="text-muted">Wedding, June 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">"Cercis transformed our wedding venue into an absolute dream! The floral arrangements were exactly what we envisioned, and their attention to detail was impeccable. The team was professional, creative, and a joy to work with."</p>
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed" alt="Wedding Decoration" class="img-fluid rounded mt-3">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="https://i.pravatar.cc/150?img=2" alt="Carlos Rodriguez" class="rounded-circle" width="80">
+                        </div>
+                        <div class="col">
+                            <div class="testimonial-content">
+                                <div class="stars mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <h4>Carlos Rodriguez</h4>
+                                <p class="text-muted">Corporate Event, September 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">"We hired Cercis for our annual corporate gala, and they exceeded all expectations. The floral installations were stunning and perfectly matched our company's aesthetic. Their professionalism and creativity made our event truly memorable."</p>
+                    <img src="https://images.unsplash.com/photo-1530077471762-3cef45f920cd" alt="Corporate Event" class="img-fluid rounded mt-3">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="https://i.pravatar.cc/150?img=3" alt="María García" class="rounded-circle" width="80">
+                        </div>
+                        <div class="col">
+                            <div class="testimonial-content">
+                                <div class="stars mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <h4>María García</h4>
+                                <p class="text-muted">Special Exhibition, October 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">"The artistic installation Cercis created for our gallery opening was breathtaking. They perfectly captured the essence of our exhibition theme through their innovative use of natural elements. True artists in every sense!"</p>
+                    <img src="https://images.unsplash.com/photo-1670005486640-4f69b67a8443" alt="Art Installation" class="img-fluid rounded mt-3">
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="https://i.pravatar.cc/150?img=4" alt="Sofia López" class="rounded-circle" width="80">
+                        </div>
+                        <div class="col">
+                            <div class="testimonial-content">
+                                <div class="stars mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <h4>Sofia López</h4>
+                                <p class="text-muted">Birthday Celebration, December 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">"Cercis made my daughter's 15th birthday celebration absolutely magical! The floral arrangements were stunning and created the perfect atmosphere for this special milestone. Their creativity and attention to detail are unmatched."</p>
+                    <img src="https://images.unsplash.com/photo-1727718550302-6998c908d7c6" alt="Birthday Celebration" class="img-fluid rounded mt-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Create Your Own Success Story?</h2>
+        <p class="lead mb-4">Let us help you bring your vision to life with our artistic floral designs</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="cta-image-container mb-4">
+                    <img src="https://images.unsplash.com/photo-1726518424290-0c2773b74bbd" alt="Floral Design" class="img-fluid rounded">
+                </div>
+                <a href="./contact" class="btn btn-cercis btn-lg">Contact Us Today</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h4>Cercis</h4>
+                <p>Transforming Spaces with Artful Floral Creations</p>
+                <div class="social-links mt-3">
+                    <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt me-2"></i> Madrid, Spain</li>
+                    <li><i class="fas fa-phone me-2"></i> +34 XXX XXX XXX</li>
+                    <li><i class="fas fa-envelope me-2"></i> info@cercis.com</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./services">Services</a></li>
+                    <li><a href="./portfolio">Portfolio</a></li>
+                    <li><a href="./contact">Request a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy; 2024 Cercis - Taller de Arte Vegetal. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="./static/js/main.js"></script>
+    
+</body>
+</html>

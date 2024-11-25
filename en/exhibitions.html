@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cercis - Taller de Arte Vegetal</title>
+    <meta name="description" content="Innovative and handcrafted floral decorations for events in Madrid. Transforming spaces with artful floral creations.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/animations.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="./">Cercis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./exhibitions">Exhibitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact</a>
+                </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="./exhibitions?lang=en">English</a></li>
+                        <li><a class="dropdown-item" href="./exhibitions?lang=es">Spanish</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        
+            
+        
+        
+        
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1709296384772-0daf68ba7d62')">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4 mb-4 fade-in">Exhibitions & Projects</h1>
+            <p class="lead slide-up">Where Nature Meets Art</p>
+        </div>
+    </div>
+</section>
+
+<section class="exhibitions-content py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="mb-4">CERCIS Estructuras Vegetales</h2>
+                <p class="lead">Exploring the intersection of botanical art and architectural design</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <div class="exhibition-card">
+                    <img src="https://images.unsplash.com/photo-1726518424290-0c2773b74bbd" alt="Current Exhibition" class="img-fluid rounded mb-3">
+                    <h3>Current Exhibition</h3>
+                    <p class="lead">Natural Harmony</p>
+                    <p>An exploration of organic forms and natural patterns through floral installations.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Dates:</strong> April 1-30, 2024</li>
+                        <li><strong>Location:</strong> Madrid Design Center</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="exhibition-card">
+                    <img src="https://images.unsplash.com/photo-1510924199351-4e9d94df18a6" alt="Upcoming Exhibition" class="img-fluid rounded mb-3">
+                    <h3>Upcoming Exhibition</h3>
+                    <p class="lead">Botanical Perspectives</p>
+                    <p>A fresh take on traditional floral art through contemporary installations.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Dates:</strong> May 15-June 15, 2024</li>
+                        <li><strong>Location:</strong> Gallery Moderna</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center mb-4">Past Projects</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="past-project-card">
+                            <img src="https://images.unsplash.com/photo-1670005486640-4f69b67a8443" alt="Past Exhibition 1" class="img-fluid rounded mb-3">
+                            <h4>Floral Symphony</h4>
+                            <p>A celebration of color and form through seasonal blooms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="past-project-card">
+                            <img src="https://images.unsplash.com/photo-1727718550302-6998c908d7c6" alt="Past Exhibition 2" class="img-fluid rounded mb-3">
+                            <h4>Urban Nature</h4>
+                            <p>Bringing natural elements into urban spaces.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="past-project-card">
+                            <img src="https://images.unsplash.com/photo-1530077471762-3cef45f920cd" alt="Past Exhibition 3" class="img-fluid rounded mb-3">
+                            <h4>Seasonal Transitions</h4>
+                            <p>Exploring nature's changing patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="exhibition-info py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3>Visit Our Exhibitions</h3>
+                <p>Experience our artistic vision and innovative approach to floral design in person. Our exhibitions are open to the public and showcase our latest work in botanical art.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-clock me-2"></i> Tuesday - Sunday: 10:00 - 19:00</li>
+                    <li class="mb-2"><i class="fas fa-ticket-alt me-2"></i> Free admission</li>
+                    <li class="mb-2"><i class="fas fa-users me-2"></i> Guided tours available</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <h3>Collaboration Opportunities</h3>
+                <p>We welcome collaborations with artists, designers, and venues. Contact us to discuss potential partnerships and exhibition opportunities.</p>
+                <a href="./contact" class="btn btn-cercis">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h4>Cercis</h4>
+                <p>Transforming Spaces with Artful Floral Creations</p>
+                <div class="social-links mt-3">
+                    <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt me-2"></i> Madrid, Spain</li>
+                    <li><i class="fas fa-phone me-2"></i> +34 XXX XXX XXX</li>
+                    <li><i class="fas fa-envelope me-2"></i> info@cercis.com</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./services">Services</a></li>
+                    <li><a href="./portfolio">Portfolio</a></li>
+                    <li><a href="./contact">Request a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy; 2024 Cercis - Taller de Arte Vegetal. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="./static/js/main.js"></script>
+    
+</body>
+</html>
